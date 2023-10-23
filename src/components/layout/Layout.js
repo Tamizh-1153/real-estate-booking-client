@@ -24,7 +24,7 @@ const Layout = () => {
     const getTokenAndRegister = async () => {
       const res = await getAccessTokenWithPopup({
         authorizationParams: {
-          audience: "http://localhost:5000",
+          audience: "https://real-estate-booking-tm.onrender.com",
           scope: "openid profile email",
         },
       })
@@ -38,7 +38,6 @@ const Layout = () => {
   return (
     <>
       <div
-      // style={{ background: "var(--black)", overflow: "hidden" }}
       >
         <Header />
         <Outlet />
